@@ -22,7 +22,7 @@ const Home: NextPage = () => {
               </GradientText>
             </div>
           </div>
-          <Button className="lg:ml-8 mt-4 w-full lg:w-36 h-10 text-xl">
+          <Button className="lg:ml-8 mt-4 w-[100%] lg:w-36 h-10 text-xl">
             Let's Talk
           </Button>
         </div>
