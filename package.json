@@ -1,7 +1,7 @@
 {
-  "name": "robobat",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "Robobat is a web online game where you take a bot with ability and play with against other players.",
+  "description": "A portfolio of my work.",
   "private": true,
   "author": {
     "name": "devkarim",
