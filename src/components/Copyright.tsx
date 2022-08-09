@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 import Link from 'next/link';
-import { APP_NAME } from '../config/constants';
-import GradientText from './ui/GradientText';
+import Author from './ui/Author';
 
 interface CopyrightProps {
   className?: string;
@@ -16,13 +15,9 @@ const Copyright: React.FC<CopyrightProps> = ({ className }) => {
       )}
     >
       <p>
-        Made with <span className="text-primary">❤️</span> by{' '}
-        <GradientText className="font-pacifico inline bg-gradient-to-r from-primary to-secondary">
-          <Link href="https://github.com/devkarim" target="_blank">
-            devkarim
-          </Link>
-        </GradientText>
+        Made with <span className="text-primary">❤️</span> by
       </p>
+      <Author className="ml-1 " />
       <p className="mx-1">|</p>
       <Link href="https://github.com/devkarim/portfolio" target="_blank">
         GitHub Repo

@@ -5,6 +5,7 @@ import Button from '../ui/Button';
 import GradientText from '../ui/GradientText';
 import IconLink from '../ui/IconLink';
 import { FaBars } from 'react-icons/fa';
+import Author from '../ui/Author';
 
 interface AppbarProps {
   children?: React.ReactNode;
@@ -22,9 +23,7 @@ const DesktopAppbar: React.FC<{}> = () => {
         'appbar z-50 justify-between items-center py-6 px-10 lg:pl-24 lg:px-20 hidden sm:flex'
       )}
     >
-      <GradientText className="text-4xl font-pacifico bg-gradient-to-r from-primary to-secondary">
-        devkarim
-      </GradientText>
+      <Author href="/" className="text-4xl" />
       <div className="flex justify-between items-center space-x-8">
         <Link href="/services">Services</Link>
         <Link href="/work">Work</Link>

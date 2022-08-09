@@ -20,7 +20,7 @@
   animation: moveText 10s ease-in-out infinite;
 }
 
-#react-native-text, #typescript-text {
+#react-native-text, #typescript-text, #reactjs-text {
   animation: moveText 8s ease-in-out infinite;
 }
 
@@ -30,7 +30,6 @@
   }
   to {
     transform: translateY(-300px);
-
   }
 }
 

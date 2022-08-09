@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 
 interface ButtonProps {
-  width?: ComponentSize;
   type?: 'button' | 'submit' | 'reset';
   variant?: 'solid' | 'outline';
   className?: string;
@@ -10,7 +9,6 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({
-  width,
   type,
   variant = 'solid',
   className,
