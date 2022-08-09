@@ -13,6 +13,9 @@ module.exports = {
         pacifico: ['Pacifico'],
         oleo: ['Oleo Script Swash Caps'],
       },
+      fontSize: {
+        '10xl': '9rem',
+      },
     },
   },
 };
