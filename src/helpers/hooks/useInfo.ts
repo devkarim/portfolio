@@ -1,6 +1,5 @@
-import { logError } from 'helpers/utils/common';
+import { logError } from '@/helpers/utils';
 import { useState } from 'react';
-import { getErrorMessage } from 'services/api';
 
 const useInfo = (initialState: BaseInfo | null = null) => {
   const [info, setInfoState] = useState(initialState);
@@ -10,7 +9,7 @@ const useInfo = (initialState: BaseInfo | null = null) => {
     if (!err) return resetAll();
     logError(err);
     setInfoState({
-      message: getErrorMessage(err),
+      message: err,
       color: 'text-red-500',
       error: true,
     });
