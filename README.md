@@ -1,8 +1,8 @@
-# Karim Wael's Portfolio
+# Karim Wael's Portfolio - Still in Maintenance
 
 ## Summary
 
-A showcase / portfolio website of my work. Check my [website](https://www.karimwael.com)!
+A showcase / portfolio website of my work still in maintenance. Check my [website](https://www.karimwael.com) for live development!
 
 ## Getting Started
 
