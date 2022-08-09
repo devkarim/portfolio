@@ -33,3 +33,19 @@
 
   }
 }
+
+/* Spacecraft Lines */
+#spacecraft-lines {
+  transform-origin: center;
+  animation: moveLines 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes moveLines {
+  from {
+    transform: rotateX(15deg)translateY(15px);
+  }
+  to {
+    transform: rotateX(-15deg)translateY(-15px);
+
+  }
+}

@@ -19,7 +19,7 @@ const DesktopAppbar: React.FC<{}> = () => {
   return (
     <nav
       className={classNames(
-        'appbar z-50 justify-between items-center py-6 lg:pl-28 px-20 hidden md:flex'
+        'appbar z-50 justify-between items-center py-6 px-10 lg:pl-28 lg:px-20 hidden sm:flex'
       )}
     >
       <GradientText className="text-4xl font-pacifico bg-gradient-to-r from-primary to-secondary">
@@ -43,7 +43,7 @@ const MobileAppbar: React.FC<MobileNavbarProps> = ({
 }) => {
   return (
     <div>
-      <nav className="appbar z-50 justify-between items-center py-6 px-10 flex md:hidden">
+      <nav className="appbar z-50 justify-between items-center py-6 px-10 flex sm:hidden">
         <GradientText className="text-4xl font-pacifico bg-gradient-to-r from-primary to-secondary">
           devkarim
         </GradientText>
@@ -57,7 +57,7 @@ const MobileAppbar: React.FC<MobileNavbarProps> = ({
           <Link href="/services">Services</Link>
           <Link href="/work">Work</Link>
           <Link href="/reviews">Reviews</Link>
-          <Button className="!w-full bg-gradient-to-r from-primary to-secondary">
+          <Button className="w-full bg-gradient-to-r from-primary to-secondary">
             Contact
           </Button>
         </div>

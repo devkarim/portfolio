@@ -21,7 +21,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       type={type}
       className={classNames(
-        'w-fit h-fit px-4 py-1 transition colors opacity duration-300',
+        'px-4 py-1 transition colors opacity duration-300',
         {
           'bg-gradient-to-r from-primary to-secondary hover:opacity-90 rounded-lg font-medium':
             variant == 'solid',
