@@ -4,14 +4,6 @@ import { DOMAIN, METADATA } from '../config/constants';
 const AppHead: React.FC<any> = () => (
   <Head>
     <title>{METADATA.title}</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap"
-      rel="stylesheet"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content={METADATA.title} />
     <meta name="description" content={METADATA.description} />

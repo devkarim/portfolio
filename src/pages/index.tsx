@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import Appbar from '../components/guest/Appbar';
+import SpaceCraft from '../components/guest/Spacecraft';
 import Button from '../components/ui/Button';
 import GradientText from '../components/ui/GradientText';
 
@@ -26,8 +27,8 @@ const Home: NextPage = () => {
             Let's Talk
           </Button>
         </div>
-        <div className="hidden lg:block h-full relative">
-          <Image src="/svg/spacecraft.svg" layout="fill" objectFit="contain" />
+        <div className="myspacecraft hidden lg:block h-full relative">
+          <SpaceCraft />
         </div>
       </div>
       <div className="absolute top-0 right-0 hidden lg:block w-20 h-full">

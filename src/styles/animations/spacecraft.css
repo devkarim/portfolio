@@ -1,0 +1,35 @@
+/* Spacecraft */
+
+.myspacecraft {
+  animation: moveSpacecraft 1s ease-in-out infinite alternate;
+}
+
+@keyframes moveSpacecraft {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+
+  }
+}
+
+/* Spacecraft Texts */
+
+#nodejs-text, #python-text, #nextjs-text {
+  animation: moveText 10s ease-in-out infinite;
+}
+
+#react-native-text, #typescript-text {
+  animation: moveText 8s ease-in-out infinite;
+}
+
+@keyframes moveText {
+  from {
+    transform: translateY(250px);
+  }
+  to {
+    transform: translateY(-300px);
+
+  }
+}
