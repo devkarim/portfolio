@@ -57,7 +57,7 @@ const MobileAppbar: React.FC<MobileNavbarProps> = ({
           <Link href="/services">Services</Link>
           <Link href="/work">Work</Link>
           <Link href="/reviews">Reviews</Link>
-          <Button className="w-[100%] bg-gradient-to-r from-primary to-secondary">
+          <Button className="!w-full bg-gradient-to-r from-primary to-secondary">
             Contact
           </Button>
         </div>
