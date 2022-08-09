@@ -7,7 +7,7 @@ import SpaceCraft from '../components/guest/Spacecraft';
 import Button from '../components/ui/Button';
 import { __dev__ } from '../config/constants';
 
-const TEXT_PAUSE = __dev__ ? 1000 : 3000;
+const TEXT_PAUSE = __dev__ ? 1000 : 2000;
 
 const LeftBlobs = () => (
   <Image src="/svg/left-blobs.svg" width={120} height={120} />
@@ -17,7 +17,7 @@ const ServiceTypeWriter = () => (
   <Typewriter
     options={{
       loop: true,
-      cursorClassName: 'ml-2 text-6xl',
+      cursorClassName: 'ml-2 text-6xl text-primary',
       delay: 150,
       wrapperClassName:
         'text-center w-auto pl-2 text-transparent bg-clip-text text-7xl lg:text-8xl xl:text-10xl font-oleo bg-gradient-to-r from-primary to-secondary',
