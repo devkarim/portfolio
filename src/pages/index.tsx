@@ -6,11 +6,12 @@ import Appbar from '../components/guest/Appbar';
 import SpaceCraft from '../components/guest/Spacecraft';
 import Button from '../components/ui/Button';
 import { __dev__ } from '../config/constants';
+import Copyright from '../components/Copyright';
 
 const TEXT_PAUSE = __dev__ ? 1000 : 2000;
 
 const LeftBlobs = () => (
-  <Image src="/svg/left-blobs.svg" width={120} height={120} />
+  <Image src="/svg/left-blobs.svg" width={100} height={100} />
 );
 
 const ServiceTypeWriter = () => (
@@ -44,33 +45,36 @@ const RightWaves = () => (
 
 const Home: NextPage = () => {
   return (
-    <div className="flex flex-col relative h-screen">
-      <div className="absolute hidden lg:block">
-        <LeftBlobs />
-      </div>
-      <Appbar />
-      <div className="grid justify-center lg:grid-cols-2 lg:grid-flow-col py-6 lg:px-8 xl:px-16 items-center h-full">
-        <div className="flex flex-col items-center lg:block">
-          <div className="flex text-center lg:text-start">
-            <div className="w-1 bg-primary mr-6 hidden lg:block" />
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                I make apps on
-              </h1>
-              <ServiceTypeWriter />
+    <div>
+      <div className="flex flex-col relative h-screen">
+        <div className="absolute hidden lg:block">
+          <LeftBlobs />
+        </div>
+        <Appbar />
+        <div className="grid justify-center lg:grid-cols-2 lg:grid-flow-col py-6 lg:px-8 xl:px-16 items-center h-full">
+          <div className="flex flex-col items-center lg:block">
+            <div className="flex text-center lg:text-start">
+              <div className="w-1 bg-primary mr-6 hidden lg:block" />
+              <div>
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                  I make apps on
+                </h1>
+                <ServiceTypeWriter />
+              </div>
             </div>
+            <Button className="lg:ml-8 mt-12 w-64 lg:w-36 h-10 text-xl">
+              Let's Talk
+            </Button>
           </div>
-          <Button className="lg:ml-8 mt-12 w-64 lg:w-36 h-10 text-xl">
-            Let's Talk
-          </Button>
+          <div className="myspacecraft hidden lg:block h-full relative">
+            <SpaceCraft />
+          </div>
         </div>
-        <div className="myspacecraft hidden lg:block h-full relative">
-          <SpaceCraft />
+        <div className="absolute top-0 right-0 hidden xl:block w-20 h-full">
+          <RightWaves />
         </div>
       </div>
-      <div className="absolute top-0 right-0 hidden xl:block w-20 h-full">
-        <RightWaves />
-      </div>
+      <Copyright />
     </div>
   );
 };

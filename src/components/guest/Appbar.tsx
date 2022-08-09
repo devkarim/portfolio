@@ -19,7 +19,7 @@ const DesktopAppbar: React.FC<{}> = () => {
   return (
     <nav
       className={classNames(
-        'appbar z-50 justify-between items-center py-6 px-10 lg:pl-28 lg:px-20 hidden sm:flex'
+        'appbar z-50 justify-between items-center py-6 px-10 lg:pl-24 lg:px-20 hidden sm:flex'
       )}
     >
       <GradientText className="text-4xl font-pacifico bg-gradient-to-r from-primary to-secondary">
