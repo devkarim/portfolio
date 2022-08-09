@@ -6,7 +6,7 @@ import GradientText from '../components/ui/GradientText';
 
 const Home: NextPage = () => {
   return (
-    <div className="relative h-screen">
+    <div className="flex flex-col relative h-screen">
       <div className="absolute hidden lg:block">
         <Image src="/svg/left-blobs.svg" width={120} height={120} />
       </div>
@@ -22,7 +22,7 @@ const Home: NextPage = () => {
               </GradientText>
             </div>
           </div>
-          <Button className="lg:ml-8 mt-4 w-[100%] lg:w-36 h-10 text-xl">
+          <Button className="lg:ml-8 mt-4 w-full lg:w-36 h-10 text-xl">
             Let's Talk
           </Button>
         </div>
