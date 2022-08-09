@@ -1,13 +1,22 @@
 # Karim Wael's Portfolio
 
-## Overview
+## Summary
 
-A portfolio of my work. Check my website [here](https://www.karimwael.com)!
+A showcase / portfolio website of my work. Check my [website](https://www.karimwael.com)!
+
+## Getting Started
+
+To install this repo on your machine, do the following:
+
+1. Clone this repo via `git clone https://github.com/devkarim/portfolio.git`
+2. Use `cd portfolio`.
+3. Use `yarn` to install all required dependencies.
+4. Use `yarn dev` to start Next.js development server.
 
 ## Authors
 
-This portfolio is created by [@devkarim](https://github.com/devkarim).
+This website is designed & created by [@devkarim](https://github.com/devkarim).
 
 ## License
 
-Under MIT license. Check [this](https://github.com/devkarim/robobat/blob/main/LICENSE.md) for more info.
+Under [MIT](https://github.com/devkarim/portfolio/blob/main/LICENSE.md) license.
